@@ -1,0 +1,33 @@
++-----------------------------------+
+|            Common Role            |
++-----------------------------------+
+| - Access to event details         |
+| - Communication and notifications|
+| - Security                        |
+| - Support and documentation       |
++-----------------------------------+
+
++-----------------------------------+
+|          Different Roles           |
++-----------------------------------+
+|        Admin         | Organizer  |
++-----------------------------------+
+| - User management    | - Event creation and management |
+| - System configuration | - Attendee management |
+| - Administrative tasks | - Event analytics and reporting |
+|                       | - Limited system-wide settings access |
++-----------------------------------+
+|        Admin         |  Attendee  |
++-----------------------------------+
+| - User management    | - Event registration and ticketing |
+| - System configuration | - Access to event details |
+| - Administrative tasks | - Communication and notifications |
+|                        | - Limited backend access |
++-----------------------------------+
+|      Organizer       |  Attendee  |
++-----------------------------------+
+| - Event creation and management | - Event registration and ticketing |
+| - Attendee management | - Access to event details |
+| - Event analytics and reporting | - Communication and notifications |
+| - Limited system-wide settings access | - Limited backend access |
++-----------------------------------+
