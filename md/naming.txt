@@ -1,0 +1,16 @@
+method: : CamelCase
+filename: : camelCase
+
+variables : snake_case
+
+
+
+error :: what ever error we will throw the express will pass
+app.get('/example', (req, res, next) => {
+  try {
+    // Some code that may throw an error
+    throw new Error('Example error');
+  } catch (error) {
+    next(error); // Passes the error to the next middleware
+  }
+});

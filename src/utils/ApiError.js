@@ -3,7 +3,7 @@ class AppiError extends Error {
     statusCode,
     message = "Something Went Wrong",
     errors = [],
-    statck = ""
+    stack = ""
   ) {
     super(message);
     this.statusCode = statusCode;
@@ -12,12 +12,12 @@ class AppiError extends Error {
     this.success = false;
     this.errors = errors;
 
-    if (statck) {
-      this.stack = statck;
+    if (stack) {
+      this.stack = stack;
     } else {
       Error.captureStackTrace(this, this.constructor);
     }
   }
 }
 
-export { AppiError };
+export default AppiError;

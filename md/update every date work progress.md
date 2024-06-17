@@ -1,9 +1,14 @@
 ## Backend Event Management
 
-### Setting up the Future Required File
+### Application Requirements
 
-1. **Authorisation**
+1. **Authorisation** (**_completed_**)
+
 2. **Assign Role to the User:** admin, organiser, attendee
+   (**_completed_**)
+
+   > need the front end configurations for the role authentication full use
+
 3. **Event Creation**
    - Enable organizers to create and customize events.
    - Input fields for event name, description, date, time, location, and type.
