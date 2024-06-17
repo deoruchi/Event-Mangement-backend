@@ -18,7 +18,7 @@
 > NOTE : ADD THE ADMIN MANNUALLY
 > AND FOR THE CREATOR AND READER :: DIFFERENT REGISTRATION WILL BE PROVIDED
 
---
+---
 
 - [ ] add the backend file to a server so that frontend can use it
 - [ ] add the logger
