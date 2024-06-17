@@ -1,12 +1,12 @@
 import express, { urlencoded } from "express";
 import dotenv from "dotenv";
-import connect from "./db/db.js";
+import connect from "./src/db/db.js";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import cors from cors
 dotenv.config();
 
-import userRoutes from "./routes/api/register.js";
+import userRoutes from "./src/routes/api/register.js";
 const app = express();
 
 //middlewares
