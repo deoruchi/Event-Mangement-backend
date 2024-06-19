@@ -19,22 +19,16 @@ const userRegistration = async (req, res) => {
 //login
 const userLogin = async (req, res) => {
   const { name, email, password, _id } = req.body;
-
   if (!email) {
     throw new ApiError(400, "User not found");
   }
-
   const user = await userModel.findOne({ email });
-
   if (!user) {
     throw new ApiError(404, "User not found");
   }
-
   const match = await user.compare_password(password);
-
   if (match) {
     //add jwt and save it in db
-
     const { access_token, refresh_token } = await generateAccessandRefreshToken(
       user._id
     );

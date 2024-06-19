@@ -1,6 +1,6 @@
-import userModel from "../models/user.model";
+import userModel from "../models/user.model.js";
 import jwt from "jsonwebtoken";
-import AppiError from "../utils/ApiError";
+import AppiError from "../utils/ApiError.js";
 
 //after login and registration we can access role
 const userPermit = function (...permitroles) {
