@@ -2,7 +2,7 @@ import userModel from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 import AppiError from "../utils/ApiError.js";
 
-//after login and registration we can access role
+//after login and registration we can access role :: userPermit("USER")
 const userPermit = function (...permitroles) {
   return async function (req, _, next) {
     const user_accesstoken = req.cookies()?.accesstoken;
