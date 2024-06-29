@@ -15,6 +15,9 @@ app.use(cookieParser());
 app.use(cors());
 
 //routes
+app.get("/", (req, res) => {
+  res.send("Welcome to Event Mangment Web Application");
+});
 app.use("/api", userRoutes);
 
 app.listen(process.env.PORT || 3400, () => {
